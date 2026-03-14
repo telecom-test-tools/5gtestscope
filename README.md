@@ -33,13 +33,13 @@ A smart 5G log analyzer tool designed for test engineers to automatically analyz
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/5gtestscope.git
+   git clone https://github.com/telecom-test-tools/5gtestscope.git
    cd 5gtestscope
    ```
 
 2. Install dependencies:
    ```bash
-   pip install rich
+   pip install .
    ```
 
 ## Usage
@@ -47,12 +47,12 @@ A smart 5G log analyzer tool designed for test engineers to automatically analyz
 Run the analyzer on a log file:
 
 ```bash
-python3 main.py <path_to_log_file>
+5gtestscope <path_to_log_file>
 ```
 
 Example:
 ```bash
-python3 main.py examples/sample_log.txt
+5gtestscope examples/sample_log.txt
 ```
 
 ### Sample Output
@@ -89,7 +89,7 @@ The tool expects log files with timestamped entries. Example format:
 
 ## Dependencies
 
-- Python 3.6+
+- Python 3.9+
 - Rich (for console formatting)
 
 ## 🌐 Part of Telecom Test Toolkit
@@ -98,13 +98,15 @@ This project is part of the **Telecom Test Toolkit ecosystem**.
 
 Other tools:
 
-- 5GTestScope
-- Test Monitor Dashboard
-- Regression Flakiness Analyzer
-- Test Report Generator
+- [telecom-test-toolkit](https://github.com/telecom-test-tools/telecom-test-toolkit) (Orchestrator)
+- [testwatch](https://github.com/telecom-test-tools/testwatch)
+- [5g-log-analyzer](https://github.com/telecom-test-tools/5g-log-analyzer)
+- [Regression-Flakiness-Scorer](https://github.com/telecom-test-tools/Regression-Flakiness-Heatmap-Scorer)
+- [test-report-gen](https://github.com/telecom-test-tools/test-report-gen)
+- [test-monitor-dashboard](https://github.com/telecom-test-tools/test-monitor-dashboard)
 
 🔗 Main project:
-https://github.com/gbvk312/telecom-test-toolkit
+https://github.com/telecom-test-tools/telecom-test-toolkit
 
 ## License
 
