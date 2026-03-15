@@ -6,7 +6,6 @@ from the original project.
 """
 
 import os
-import sys
 
 from ttt.models import AnalysisResult, PipelineContext, TestResult
 from ttt.plugin import TTTPlugin
