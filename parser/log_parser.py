@@ -1,5 +1,6 @@
 import re
 
+
 def parse_log(file_path):
     events = []
 

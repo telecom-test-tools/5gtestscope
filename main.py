@@ -1,15 +1,9 @@
 import sys
-
 from parser.log_parser import parse_log
+
 from analyzer.failure_detector import detect_failures
 from reports.report import print_report
-from analyzer.failure_detector import detect_failures
-from analyzer.failure_detector import detect_failures
 
-from analyzer.failure_detector import detect_failures
-from analyzer.failure_detector import detect_failures
-
-from analyzer.failure_detector import detect_failures
 
 def calculate_kpis(events):
 
@@ -21,7 +15,7 @@ def calculate_kpis(events):
     return {
         "total_events": total,
         "failures": failures,
-        "success_rate": round(success_rate, 2)
+        "success_rate": round(success_rate, 2),
     }
 
 

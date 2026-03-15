@@ -28,9 +28,26 @@ dependencies = [
 [project.scripts]
 5gtestscope = "main:main"
 
+[project.entry-points."ttt.plugins"]
+testscope = "testscope_plugin:TestScopePlugin"
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["analyzer*", "parser*", "reports*"]
 
 [tool.setuptools.py-modules]
-modules = ["main"]
+modules = ["main", "testscope_plugin"]
+
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true
